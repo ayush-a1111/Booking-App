@@ -1,0 +1,16 @@
+{
+  "name": "book-my-show",
+  "version": "1.0.0",
+  "description": "Ticket booking app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./src/index.js"
+  },
+  "author": "Ayush Aryan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
