@@ -1,8 +1,12 @@
 import express from 'express';
-import { PORT } from './config/index.js';
+import { ServerConfig, Logger } from './config/index.js';
+import { router as apiRoutes } from './routes/index.js';
 
 const app = express();
 
-app.listen(PORT,()=>{
-    console.log(`APP is up and runing at PORT : ${PORT}`);
+app.use('/api', apiRoutes);
+
+app.listen(ServerConfig.PORT, () => {
+    console.log(`APP is up and runing at PORT : ${ServerConfig.PORT}`);
+    Logger.info(`Successfully started the server`, {});
 });

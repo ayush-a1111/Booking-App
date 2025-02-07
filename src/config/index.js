@@ -1,8 +1,4 @@
-import dotenv from 'dotenv';
+import * as ServerConfig from './server-config.js';
+import { logger as Logger } from './logger-config.js';
 
-dotenv.config();
-const PORT = process.env.PORT;
-
-export {
-    PORT 
-}
+export { ServerConfig, Logger };
