@@ -1,3 +1,4 @@
-import * as pingController from './ping-controller.js';
+import * as PingController from './ping-controller.js';
+import * as EventController from './event-controller.js';
 
-export { pingController };
+export { PingController, EventController };
